@@ -153,3 +153,7 @@ CACHES = {
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 #让cache保存在redis的1号库
 SESSION_CACHE_ALIAS = "session"
+
+#替换系统的User来使用我们自己定义的User
+#配置信息为 '子应用名.模型类名'
+AUTH_USER_MODEL = 'users.User'
